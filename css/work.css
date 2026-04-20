@@ -1,0 +1,29 @@
+/* メイン（コンテンツ全体） */
+.main {
+  background-color: rgb(168, 172, 207);
+  width: 30%;
+  height: 50rem;
+  border: 0.5rem solid red;
+}
+
+/* メインビジュアル */
+.mv {
+  display: flex;
+}
+
+.test1 {
+}
+
+.test2 {
+}
+
+.test3 {
+}
+
+/* レシピ一覧（セクション） */
+.recipes {
+}
+
+/* お知らせ・情報（セクション） */
+.info {
+}
