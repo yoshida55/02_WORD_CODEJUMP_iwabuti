@@ -1,29 +1,52 @@
-/* メイン（コンテンツ全体） */
-.main {
-  background-color: rgb(168, 172, 207);
-  width: 30%;
-  height: 50rem;
-  border: 0.5rem solid red;
+:root {
+  --side-width: 22rem;
 }
 
-/* メインビジュアル */
-.mv {
+/* ┌─────────────────────────────────────────┐
+   │ ヘッダー                                │
+   └─────────────────────────────────────────┘ */
+
+/* ヘッダー【flex 横2列: ロゴ + ナビ】 */
+.header {
   display: flex;
+  height: 27rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--side-width);
 }
 
-.test1 {
+/* └ ロゴ（左） */
+.header_logo {
+  width: 12rem;
+  height: 2.7rem;
 }
 
-.test2 {
+/* └ ナビ（右） */
+.header_nav {
 }
 
-.test3 {
+/* ナビリスト【flex 横5列: About + Works + News + Contact + Instagram】 */
+.nav_list {
+  display: flex;
+  gap: 3.3rem;
+  align-items: center;
 }
 
-/* レシピ一覧（セクション） */
-.recipes {
+/* └ ナビアイテム */
+.nav_item {
 }
 
-/* お知らせ・情報（セクション） */
-.info {
+/* ナビリンク */
+.nav_link {
+  color: #24292e;
+  font-size: 1.44rem;
+  font-family: Meiryo;
+  letter-spacing: 0;
+  line-height: 1.18;
+}
+
+/* Instagramアイコン */
+.nav_img {
+  width: 2rem;
+  height: 2rem;
 }

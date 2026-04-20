@@ -28,7 +28,7 @@ img {
   height: 37rem;
   object-fit: cover;
 }
-/* <!-- メインビジュアルここまで --> */
+
 @media screen and (max-width: 699.98px) {
   html {
     font-size: calc(10 / 375 * 100vw);

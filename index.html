@@ -10,7 +10,23 @@
   </head>
 
   <body>
-    <header class="header"></header>
+    <!-- ヘッダー【flex 横2列: ロゴ + ナビ】 -->
+    <header class="header">
+      <!-- └ ロゴ（左） -->
+      <img class="header_logo" src="img/logo.svg" alt="My Work" />
+      <!-- └ ナビ（右） -->
+      <nav class="header_nav">
+        <!-- ナビリスト【flex 横5列: About + Works + News + Contact + Instagram】 -->
+        <ul class="nav_list">
+          <li class="nav_item"><a class="nav_link" href="#">About</a></li>
+          <li class="nav_item"><a class="nav_link" href="#">Works</a></li>
+          <li class="nav_item"><a class="nav_link" href="#">News</a></li>
+          <li class="nav_item"><a class="nav_link" href="#">Contact</a></li>
+          <li class="nav_item"><a class="nav_link" href="#"><img class="nav_img" src="img/icon-instagram.png" alt="Instagram" /></a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main class="main">
       <section class="mv">
         <div class="test1"></div>
