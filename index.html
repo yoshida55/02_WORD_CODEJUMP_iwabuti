@@ -22,9 +22,9 @@
           <li class="nav_item"><a class="nav_link" href="#">Works</a></li>
           <li class="nav_item"><a class="nav_link" href="#">News</a></li>
           <li class="nav_item"><a class="nav_link" href="#">Contact</a></li>
-          <li class="nav_item"
-            ><a class="nav_link" href="#"><img class="nav_img" src="img/icon-instagram.png" alt="Instagram" /></a
-          ></li>
+          <li class="nav_item"></li>
+            <a class="nav_link" href="#"><img class="nav_img" src="img/icon-instagram.png" alt="Instagram" /></a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -50,7 +50,7 @@
           url: www.xxxxxx.jp<br />
           mail: xxx@xxxxxx.jp
         </p>
-        <p class="about_description"> プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテキストテ キストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキスト </p>
+        <p class="about_description">プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテキストテ キストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキスト</p>
       </section>
       <!-- ===============================================
        Works
@@ -95,18 +95,36 @@
           </div>
         </dl>
       </section>
-      
+
       <!-- ===============================================
        Contact
        =============================================== -->
-       <section>
+      <section id ="contact"  class="contact_area">
         <h2 class="contact_title">Contact</h2>
-        <form action="#">
-          <label for="name">NAME</label>
+        <!-- お問い合わせフォーム　　 -->
+        <form class="contact_form" action="#">
+          <div class="contact_list">
+            <label class="contact_label" for="name">Name</label><br />
+            <input class="contact_input" type="text" id="name" name="name" />
+          </div>
+          <div class="contact_list">
+            <label class="contact_label" for="email">Email</label><br />
+            <input class="contact_input" type="email" id="email" name="email" />
+          </div>
+          <div class="contact_list">
+            <label class="contact_label" for="message">Message</label><br />
+            <textarea class="contact_input" id="message" name="message"></textarea>
+          </div>
+          <!-- 送信ボタン -->
+          <div class="contact_btn">
+            <input type="submit" value="SEND" />
+          </div>
         </form>
-       </section>
-       
+      </section>
     </main>
-    <footer class="footer"></footer>
+
+    <footer class="footer">
+      <p class="footer_copy">&copy; My Work</p>
+    </footer>
   </body>
 </html>
